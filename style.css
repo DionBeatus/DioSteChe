@@ -1,137 +1,251 @@
+:root {
+    --tulisanutama: #000000;
+    --biruutama: #0077B6;
+    --birugelap: #004468;
+    --biruterang: #E4F6FF;
+    --lightgrey: #F6F8FB;
+    --tulisanbutton: #51DACF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('fonts/kollektif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--lightgrey);
 }
 
-header,
-footer {
-    background-color: #f8f9fa;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 600;
+.navbar {
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--lightgrey);
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  color: var(--biruutama);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 400px;
+  height: auto;
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background: #fff;
+  flex-wrap: wrap;
 }
 
 .hero-text {
-    max-width: 50%;
+  flex: 1;
+  max-width: 500px;
 }
 
 .hero h1 {
-    font-size: 2rem;
-    color: #007bff;
+  font-size: 2.5rem;
+  font-family: 'Kollektif';
+  font-weight: 400;
+  color: var(--biruutama);
 }
 
-.hero button {
-    padding: 0.5rem 1rem;
-    background: #00c6ff;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
+.hero h1 span {
+  color: var(--biruutama);
+  font-weight: 600;
 }
 
-.products {
-    background: linear-gradient(to bottom, #007bff, #00c6ff);
-    padding: 2rem;
-    text-align: center;
-    color: white;
+.hero p {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--tulisanutama);
 }
 
-.products h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.btn-order {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #00c6ff;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
 }
 
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+.hero-img img {
+  max-width: 400px;
 }
 
-.card {
-    background: white;
-    border-radius: 20px;
-    padding: 1rem;
-    color: black;
-    max-width: 200px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+.services {
+  background: linear-gradient(to bottom, #007bff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.services span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 4.5rem;
+}
+
+.service-card {
+  background: white;
+  color: #000;
+  border-radius: 0 30px 0px 30px;
+  padding: 1.5rem;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 80px;
+  margin-bottom: 1rem;
 }
 
 .events {
-    padding: 2rem;
-    text-align: center;
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
-.events img {
-    width: 100%;
-    border-radius: 10px;
+.events h2 span {
+  color: #007bff;
+}
+
+.event-banner img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.slider-indicator {
+  margin-top: 1rem;
+}
+
+.slider-indicator span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.slider-indicator .active {
+  background: #007bff;
 }
 
 .testimonials {
-    background: linear-gradient(to bottom, #007bff, #00c6ff);
-    color: white;
-    text-align: center;
-    padding: 2rem;
+  background: linear-gradient(to bottom, #007bff, #00c6ff);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
 }
 
 .testimonial-card {
-    background: white;
-    color: black;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: auto;
-    max-width: 400px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #000;
+  max-width: 500px;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.testimonial-nav {
+  margin-top: 1.5rem;
+}
+
+.testimonial-nav button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  margin: 0 1rem;
+  cursor: pointer;
 }
 
 .footer {
-    background: #003366;
-    color: white;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  background: #003366;
+  color: white;
+  padding: 3rem 2rem 1rem;
 }
 
-.footer div {
-    margin-bottom: 1rem;
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .footer h4 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer p,
 .footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer-logo img {
+  height: 40px;
 }
 
 .copyright {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #ccc;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 2rem;
 }
