@@ -6,7 +6,7 @@
   --biruterang: #E4F6FF;
   --lightgrey: #F6F8FB;
   --tulisanbutton: #51DACF;
-  --bg-gradient: linear-gradient(to-down, #0077B6 10%, #B7E6FF 86%, #F6F8FB 100%);
+  --bg-gradient: linear-gradient(to bottom, #0077B6, #B7E6FF, #F6F8FB);
   --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
