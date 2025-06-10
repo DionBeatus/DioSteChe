@@ -1,0 +1,137 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #ffffff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    background: #00c6ff;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.products {
+    background: linear-gradient(to bottom, #007bff, #00c6ff);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    color: black;
+    max-width: 200px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.events {
+    padding: 2rem;
+    text-align: center;
+}
+
+.events img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimonials {
+    background: linear-gradient(to bottom, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: auto;
+    max-width: 400px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: #003366;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer div {
+    margin-bottom: 1rem;
+}
+
+.footer h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer p,
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ccc;
+}
