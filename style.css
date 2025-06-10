@@ -6,7 +6,7 @@
   --biruterang: #E4F6FF;
   --lightgrey: #F6F8FB;
   --tulisanbutton: #51DACF;
-  --bg-gradient: linear-gradient(to bottom, #0077B6, #B7E6FF, #F6F8FB);
+  --bg-gradient: linear-gradient(to bottom, #0077B6 10%, #B7E6FF 86%, #F6F8FB 100%);
   --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -80,6 +80,7 @@ a {
 .hero p span {
   font-weight: 600;
 }
+
 .btn-order {
   display: inline-block;
   padding: 0.4rem 1.5rem;
@@ -103,7 +104,7 @@ a {
 
 /* Services Section */
 .services {
-  background: var(--bg-gradient);
+  background: linear-gradient(to bottom, #0077B6 10%, #B7E6FF 86%, #F6F8FB 100%);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
@@ -179,7 +180,7 @@ a {
 
 /* Testimonials */
 .testimonials {
-  background: var(--bg-gradient);
+  background: linear-gradient(to bottom, #0077B6 10%, #B7E6FF 86%, #F6F8FB 100%);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
