@@ -7,20 +7,17 @@
     --tulisanbutton: #51DACF;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-@font-face {
-  font-family: 'Kollektif';
+    font-family: 'Kollektif';
   src: url('fonts/kollektif.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body head {
   font-family: 'Poppins', sans-serif;
