@@ -223,7 +223,7 @@ a {
   background: #fff;
   color: #000;
   max-width: 500px;
-  margin-top: 20px;
+  margin: auto;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
