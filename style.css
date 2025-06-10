@@ -389,28 +389,17 @@ nav a {
 .footer div {
     margin-bottom: 1.5rem;
     min-width: 150px;
->>>>>>> f0c2a6ceef1aceb518122db1a962b003afd65cba
 }
 
 .footer h4 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-<<<<<<< HEAD
-.footer a {
-  font-size: 0.9rem;
-  color: white;
-}
-
-.footer-logo img {
-  height: 40px;
-=======
 .footer a,
 .footer p {
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
->>>>>>> f0c2a6ceef1aceb518122db1a962b003afd65cba
 }
 
 .footer img {
@@ -418,17 +407,28 @@ nav a {
 }
 
 .copyright {
-<<<<<<< HEAD
-  text-align: center;
-  font-size: 0.8rem;
-  color: #ccc;
-  margin-top: 2rem;
-}
-=======
     background: #004e84;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #cceaff;
     padding: 1rem;
+    margin-top: 2rem;
 }
->>>>>>> f0c2a6ceef1aceb518122db1a962b003afd65cba
+.footer a {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer-logo img {
+  height: 40px;
+.footer a,
+.footer p {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.footer img {
+    filter: brightness(100);
+}
+
+
