@@ -77,16 +77,17 @@ a {
   color: #333;
 }
 
-.btn-order {
-  background-color: var(--tulisanbutton);
-  color: #fff;
-  padding: 0.75rem 1.75rem;
-  border: none;
-  border-radius: 30px;
+.hero p span {
   font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 198, 255, 0.3);
+}
+.btn-order {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  background: var(--biruterang);
+  color: var(--tulisanbutton);
+  border-radius: 30px;
+  border: 2px solid var(--tulisanbutton);
+  font-weight: bold;
 }
 
 .btn-order:hover {
