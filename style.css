@@ -55,20 +55,15 @@ a {
   color: var(--biruutama);
   font-weight: 600;
   letter-spacing: 1px;
+  transition: transform 0.3s; 
 }
 
 .navbar nav a:hover {
-  transform: scale(1.95);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  color: var(--tulisanbutton);
 }
 
 .logo img {
   height: 60px;
-}
-
-.logo img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero */
@@ -108,11 +103,6 @@ a {
   font-weight: 600;
 }
 
-.hero-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
 .btn-order {
   display: inline-block;
   padding: 0.4rem 1.5rem;
@@ -121,30 +111,47 @@ a {
   border-radius: 30px;
   border: 2px solid var(--tulisanbutton);
   font-weight: bold;
+  transition: transform 0.3s; 
 }
 
 .btn-order:hover {
-  background-color: #67defc;
+  background-color: var(--tulisanbutton);
   color: var(--biruterang);
+  border: 2px solid var(--biruterang);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero-img img {
-  max-width: 500px; 
-  border-radius: 15px;
-  box-shadow: var(--box-shadow);
+  max-width: 520px;
+  transition: transform 0.3s; 
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
 }
 
 /* Services Section */
 .services {
   background: var(--bg-gradient); 
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   color: white;
   text-align: center;
 }
 
 .services h2 {
+  text-align: left;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-weight: 200;
+  margin-left: 30px;
+}
+
+.bawahh2 {
+  text-align: left;
+  font-size: 0.8rem;
+  max-width: 350px;
+  margin-left: 30px;
 }
 
 .services span {
@@ -157,17 +164,56 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .service-card {
   background: white;
   color: #000;
-  border-radius: 0 30px 0px 30px;
-  padding: 1.5rem;
+  border-radius: 0 30px 0px 30px; 
+  padding: 1.5rem; 
   text-align: center;
   box-shadow: var(--box-shadow); 
   width: 220px; 
+  transition: transform 0.3s; 
+}
+
+.service-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 750;
+}
+
+.service-card p {
+  font-size: 0.7rem;
+  color: var(--birugelap);
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 550;
+  padding: 7px;
+  max-width: 215px;
+}
+
+.diamond {
+  max-width: auto;
+  height: 80px; 
+  object-fit: cover; 
+  margin-bottom: 0.5rem;
+}
+
+.skin {
+  max-width: auto;
+  height: 65px; 
+  object-fit: cover; 
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.heroes {
+  max-width: auto;
+  height: 80px; 
+  object-fit: cover; 
+  margin-bottom: 1rem;
+  margin-top: 0px;
 }
 
 .service-card img {
@@ -177,7 +223,7 @@ a {
 
 .service-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Events */
