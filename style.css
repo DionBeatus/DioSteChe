@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
@@ -61,6 +60,14 @@ a {
 
 .navbar nav a:hover {
   color: var(--tulisanbutton);
+}
+
+nav a {
+  scroll-behavior: smooth; /* Membuat semua link scroll ke target dengan halus */
+}
+
+html {
+  scroll-behavior: smooth; /* Membuat semua scroll ke target dengan halus */
 }
 
 .logo img {
