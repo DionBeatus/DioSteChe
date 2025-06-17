@@ -355,6 +355,7 @@ html {
   font-size: 0.9rem;
   color: white;
   transition: hover;
+  text-decoration: underline;
 }
 
 .footer-logo img {
