@@ -240,6 +240,11 @@ html {
 .events {
   padding: 2rem 2rem;
   text-align: center;
+  transition: hover;
+}
+
+.event-banner:hover {
+  transform: scale(1.05);
 }
 
 .events h2 {
@@ -286,13 +291,16 @@ html {
 }
 
 .testimonial-container {
-  display: flex;
-  overflow: hidden;
-  justify-content: flex-start;
-  margin-top: 40px;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-  /* Animasi untuk slide */
+   display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 100px;
+     margin-top: 40px;
+     transition: hover;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .testimonial-card {
