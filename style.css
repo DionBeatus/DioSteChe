@@ -238,8 +238,9 @@ html {
 
 /* Events */
 .events {
-  padding: 2rem 2rem;
   text-align: center;
+  width: 100%;
+  padding: 3rem 2rem;
 }
 
 .events h2 {
@@ -254,22 +255,30 @@ html {
   box-shadow: var(--box-shadow);
 }
 
-.slider-indicator {
-  margin-top: 1rem;
+.slider-dots {
+  position: relative;
+  bottom: 0;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
 }
 
-.slider-indicator span {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  background: #ccc;
+.slider-dots span {
+  width: 14px;
+  height: 14px;
+  background-color: #bbb;
   border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.slider-indicator .active {
-  background: #007bff;
+.slider-dots span.active {
+  background-color: var(--biruutama);
+  transform: scale(1.2);
 }
+
 
 /* Testimonials */
 .testimonials {
