@@ -240,19 +240,9 @@ html {
 .events {
   padding: 2rem 2rem;
   text-align: center;
-  transition: hover;
-}
-
-.event-banner:hover {
-  transform: scale(1.05);
 }
 
 .events h2 {
-  font-size: 2rem;
-  color: var(--biruutama);
-}
-
-.events h2 span {
   font-size: 2rem;
   color: var(--biruutama);
 }
@@ -295,12 +285,6 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 100px;
   margin-top: 40px;
-  transition: hover;
-}
-
-.testimonial-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .testimonial-card {
@@ -317,6 +301,7 @@ html {
   /* Menggunakan flex agar konten testimonial di dalamnya bisa tersusun dengan baik */
   justify-content: center;
   flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
 .testimonials h2 {
@@ -343,6 +328,11 @@ html {
   font-size: 0.9rem;
 }
 
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
 .testimonial-header img {
   width: 40px;
   height: 40px;
@@ -353,32 +343,12 @@ html {
   font-size: 1rem;
 }
 
-.testimonial-nav {
-  margin-top: 1.5rem;
-}
-
-.testimonial-nav button {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  margin: 0 1rem;
-  cursor: pointer;
-}
-
-.testimonial-nav button:focus {
-  outline: none;
-}
-
-/* Optional: add responsiveness */
 @media (max-width: 600px) {
   .testimonial-card {
     max-width: 100%;
     margin: 0 5px;
   }
 }
-
-
 
 /* Footer */
 .footer {
@@ -407,6 +377,7 @@ html {
   font-size: 0.9rem;
   color: white;
   transition: hover;
+  margin-bottom: 10px;
 }
 
 .footer-logo img {
@@ -541,4 +512,8 @@ html {
   text-align: left;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+strong {
+  font-weight: 600;
 }
