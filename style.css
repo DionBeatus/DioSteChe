@@ -291,25 +291,29 @@ html {
   justify-content: flex-start;
   margin-top: 40px;
   width: 100%;
-  transition: transform 0.5s ease-in-out; /* Animasi untuk slide */
+  transition: transform 0.5s ease-in-out;
+  /* Animasi untuk slide */
 }
 
 .testimonial-card {
   background: #fff;
   color: #000;
   width: 100%;
-  max-width: 300px; /* Lebar testimonial */
+  max-width: 300px;
+  /* Lebar testimonial */
   margin: 0 15px;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  display: flex; /* Menggunakan flex agar konten testimonial di dalamnya bisa tersusun dengan baik */
+  display: flex;
+  /* Menggunakan flex agar konten testimonial di dalamnya bisa tersusun dengan baik */
   justify-content: center;
   flex-direction: column;
 }
 
 .testimonial h2 {
-  font-size: 2rem;
+  font-size: 2,5rem;
+  font-weight: 200;
 }
 
 .nama-customer {
