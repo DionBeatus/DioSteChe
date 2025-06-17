@@ -242,6 +242,13 @@ a {
   color: var(--biruutama);
 }
 
+.event-banner img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
 .slider-indicator {
   margin-top: 1rem;
 }
