@@ -291,11 +291,11 @@ html {
 }
 
 .testimonial-container {
-   display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-     gap: 100px;
-     margin-top: 40px;
-     transition: hover;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 100px;
+  margin-top: 40px;
+  transition: hover;
 }
 
 .testimonial-card:hover {
@@ -319,8 +319,8 @@ html {
   flex-direction: column;
 }
 
-.testimonial h2 {
-  font-size: 2,5rem;
+.testimonials h2 {
+  font-size: 2rem;
   font-weight: 200;
 }
 
@@ -481,4 +481,64 @@ html {
 
 .dot.active {
   background-color: #2196f3;
+}
+
+.order-process {
+  background: var(--lightgrey);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.order-process h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #0077B6;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+}
+
+.order-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.step-card {
+  background: #fff;
+  color: #000;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.step-card h3 {
+  font-size: 1.2rem;
+  color: var(--biruutama);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.step-card p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--birugelap);
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
