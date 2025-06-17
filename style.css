@@ -55,7 +55,7 @@ a {
   color: var(--biruutama);
   font-weight: 600;
   letter-spacing: 1px;
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
 }
 
 .navbar nav a:hover {
@@ -63,11 +63,13 @@ a {
 }
 
 nav a {
-  scroll-behavior: smooth; /* Membuat semua link scroll ke target dengan halus */
+  scroll-behavior: smooth;
+  /* Membuat semua link scroll ke target dengan halus */
 }
 
 html {
-  scroll-behavior: smooth; /* Membuat semua scroll ke target dengan halus */
+  scroll-behavior: smooth;
+  /* Membuat semua scroll ke target dengan halus */
 }
 
 .logo img {
@@ -119,7 +121,7 @@ html {
   border-radius: 30px;
   border: 2px solid var(--tulisanbutton);
   font-weight: bold;
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
 }
 
 .btn-order:hover {
@@ -132,7 +134,7 @@ html {
 
 .hero-img img {
   max-width: 520px;
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
 }
 
 .hero-img img:hover {
@@ -141,7 +143,7 @@ html {
 
 /* Services Section */
 .services {
-  background: var(--bg-gradient); 
+  background: var(--bg-gradient);
   padding: 3rem 2rem;
   color: white;
   text-align: center;
@@ -178,12 +180,12 @@ html {
 .service-card {
   background: white;
   color: #000;
-  border-radius: 0 30px 0px 30px; 
-  padding: 1.5rem; 
+  border-radius: 0 30px 0px 30px;
+  padding: 1.5rem;
   text-align: center;
-  box-shadow: var(--box-shadow); 
-  width: 220px; 
-  transition: transform 0.3s; 
+  box-shadow: var(--box-shadow);
+  width: 220px;
+  transition: transform 0.3s;
 }
 
 .service-card h3 {
@@ -203,23 +205,23 @@ html {
 
 .diamond {
   max-width: auto;
-  height: 80px; 
-  object-fit: cover; 
+  height: 80px;
+  object-fit: cover;
   margin-bottom: 0.5rem;
 }
 
 .skin {
   max-width: auto;
-  height: 65px; 
-  object-fit: cover; 
+  height: 65px;
+  object-fit: cover;
   margin-bottom: 1rem;
   margin-top: 10px;
 }
 
 .heroes {
   max-width: auto;
-  height: 80px; 
-  object-fit: cover; 
+  height: 80px;
+  object-fit: cover;
   margin-bottom: 1rem;
   margin-top: 0px;
 }
@@ -240,7 +242,7 @@ html {
   text-align: center;
 }
 
-.events h2{
+.events h2 {
   font-size: 2rem;
   color: var(--biruutama);
 }
@@ -290,10 +292,10 @@ html {
   margin: auto;
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.testimonial h2{
+.testimonial h2 {
   font-size: 2rem;
 }
 
@@ -360,7 +362,7 @@ html {
 }
 
 .footer img {
-    filter: brightness(100);
+  filter: brightness(100);
 }
 
 .copyright {
@@ -399,7 +401,8 @@ html {
 .slide {
   min-width: 100%;
   height: 100%;
-  background-color: transparent; /* Atau #fff tergantung tema */
+  background-color: transparent;
+  /* Atau #fff tergantung tema */
   display: flex;
   justify-content: center;
   align-items: center;
